@@ -1,12 +1,12 @@
-/***** BASE STYLES *****/
+/****Base Styles****/
 
 body{
-  font-family: 'Source Sans Pro', sans-serif;
-  color: #2b2b2b;
+  font-family:'Red Rose', sans-serif;
+  color: #4d4d4d;
 }
 
-#about, #work, #contact {
-    height: 600px;
+#portfolio {
+  height: 800px;
 }
 
 /***** GRID *****/
@@ -26,31 +26,53 @@ body{
   float: left;
 }
 
-/*****ABOUT*****/
+/*About Me*/
+#about .fullwidth {
+margin: auto;
+}
 
-#about .full-width {
+/*****Portfolio*****/
+
+#portfolio .full-width {
     padding: 80px 0;
+    background: #ffffb3;
+    text-align: left;
+    height: 350px;
 }
 
-#about h2 {
-    font-family: 'Lora', serif;
-    font-size: 36px;
-    padding-left: 50px;
+#portfolio h2, #codepen h2 {
+  font-family: 'Lora', serif;
+  font-size: 36px;
+  padding-left: 50px;
 }
 
-#about p {
-    font-size: 21px;
-    color: #7f7f7f;
-    line-height: 40px;
-    padding-left: 50px;
-    padding-right: 50px;
+#portfolio p, #codepen p {
+  font-size: 21px;
+  color: #7f7f7f;
+  line-height: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
-/****** Header ******/
+/*****Codepen.io*****/
+
+#codepen .full-width {
+  padding: 80px 0;
+  background: #ffffb3;
+  text-align: left;
+  height: 350px;
+}
+
+#codepen a{
+  text-decoration: none;
+  color: black;
+}
+
+/*****header*****/
 
 header {
-    height: 800px;
-    background: url('../img/hero.png');
+    height: 400px;
+    background: #adad85;
     background-size: cover;
 }
 
@@ -72,106 +94,12 @@ nav ul li a {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 18px;
-
     color: #e6e600;
     padding-left: 80px;
 }
 
-header h2 {
-    width: 1000px;
-    clear: both;
-    font-family: 'Lora', serif;
-    font-size: 72px;
-    line-height: 80px;
-    color: #8a8a5c;
-    padding: 20px 0 20px 25px;
-}
-header h2 span {
-    color:#ffffcc;
-}
+/*****images*****/
+.smaller-image {
+  width: 550px;
 
-/****** Work ******/
-
-#work {
-  background: #ffffb3;
-  text-align: center;
-}
-
-#work .full-width {
-    padding: 115px 0;
-}
-
-#work img {
-    padding-bottom: 30px;
-}
-
-#work h3 {
-    font-size: 24px;
-    line-height: 32px;
-    width: 190px;
-    margin: 0 auto;
-}
-
-#work p {
-    font-family: 'Lora', serif;
-    font-size: 18px;
-    line-height: 30px;
-    padding: 0 50px;
-}
-
-/***** CONTACT *****/
-
-#contact {
-  background-color: #adad85;
-}
-#contact .full-width{
-  padding: 110px 0;
-}
-#contact img#contact-img {
-    margin-left: 25px;
-    border: 12px solid #ffffff;
-}
-
-#contact h2, #contact #email-header, #contact #socialmedia-header, #contact ul {
-    padding-left: 115px;
-}
-#contact, #envelope {
-    padding: 0 10px 0 115px;
-}
-
-#contact h2 {
-    font-family: 'Lora',serif;
-    font-size: 36px;
-    line-height: 44px;
-}
-#contact #email-header{
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 44px;
-    margin: -30px 0 5px 0;
-}
-#contact #socialmedia-header {
-    font-weight: bold;
-    font-size: 29px;
-    line-height: 44px;
-    margin: 40px 0 0 0;
-}
-#contact a {
-    text-decoration: none;
-    color: #c49075;
-    font-weight: bold;
-    font-size: 28px;
-}
-
-#contact ul{
-  list-style: none;
-}
-
-#contact ul li{
-  display: inline-block;
-}
-
-#contact ul img {
-  font-size: 32px;
-  padding-right: 48px;
 }
